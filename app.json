@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/explore/explore",
+    "pages/community/community",
+    "pages/sports/sports",
+    "pages/user/user",
+    "pages/search/search",
+    "pages/rank/rank"
+
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "吃了吗您",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color":"#FF8C00",
+    "selectedColor": "#B22222",
+    "list": [{
+      "pagePath": "pages/explore/explore",
+      "text":"发现",
+      "iconPath": "images/explore.png",
+      "selectedIconPath": "images/selectedexplore.png"
+    },
+    {
+      "pagePath": "pages/community/community",
+      "text":"社区",
+      "iconPath": "images/community.png",
+      "selectedIconPath": "images/selectedcommunity.png"
+    },
+    {
+      "pagePath": "pages/sports/sports",
+      "text":"数据",
+      "iconPath": "images/sport.png",
+      "selectedIconPath": "images/selectedsport.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text":"用户",
+      "iconPath": "images/user.png",
+      "selectedIconPath": "images/selecteduser.png"
+    }]
+  }
+}
