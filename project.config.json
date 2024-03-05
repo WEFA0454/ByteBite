@@ -1,12 +1,19 @@
-<<<<<<< HEAD
 {
+  "appid": "wxbc4f5e9cab26d27d",
+  "projectname": "clmn",
   "compileType": "miniprogram",
-  "libVersion": "trial",
+  "libVersion": "3.3.4",
   "packOptions": {
     "ignore": [],
     "include": []
   },
   "setting": {
+    "coverView": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "enhance": true,
+    "showShadowRootInWxmlPanel": true,
     "packNpmManually": true,
     "packNpmRelationList": [
       {
@@ -14,57 +21,15 @@
         "miniprogramNpmDistDir": "./"
       }
     ],
-    "coverView": true,
-    "es6": true,
-    "postcss": true,
-    "minified": true,
-    "enhance": true,
-    "showShadowRootInWxmlPanel": true,
+    "compileHotReLoad": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     }
   },
-  "condition": {},
   "editorSetting": {
     "tabIndent": "auto",
     "tabSize": 2
-  },
-  "appid": "wxbc4f5e9cab26d27d"
-=======
-{
-  "compileType": "miniprogram",
-  "libVersion": "trial",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
-  "setting": {
-    "packNpmManually": true,
-    "packNpmRelationList": [
-      {
-        "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "./"
-      }
-    ],
-    "coverView": true,
-    "es6": true,
-    "postcss": true,
-    "minified": true,
-    "enhance": true,
-    "showShadowRootInWxmlPanel": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    }
-  },
-  "condition": {},
-  "editorSetting": {
-    "tabIndent": "auto",
-    "tabSize": 2
-  },
-  "appid": "wxbc4f5e9cab26d27d"
->>>>>>> origin/master
+  }
 }

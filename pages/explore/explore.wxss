@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* chat.wxss */
 .chat-container {
   display: flex;
@@ -66,6 +66,3 @@
   background-color: #0078d4;
   color: white;
 }
-=======
-/* pages/explore/explore.wxss */
->>>>>>> origin/master

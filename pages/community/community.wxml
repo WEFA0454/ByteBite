@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!--pages/community/community.wxml-->
 <view class="community-container">
 <view style="display: flex;justify-content:space-evenly;margin-top:6px;">
@@ -26,29 +26,3 @@
 <foods-list></foods-list>
 <foods-list></foods-list>
 </view>
-=======
-<!--pages/community/community.wxml-->
-<view class="community-container">
-<view style="display: flex;justify-content:space-evenly;margin-top:6px;">
-  <van-button
-  type="default"
-  bind:click="Onrankclick"
-  hairline
-  >⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　　⁣⁣⁣⁣　　⁣⁣⁣⁣　　⁣⁣⁣⁣排行榜⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　　　⁣⁣⁣⁣⁣</van-button>
-</view>
-<view class="header">
- 
-  <van-search
-  value="{{ value }}"
-  shape="round"
-  background="#FF8C00"
-  bind:tap="Clicksearch"
-  disabled bind:focus="Clicksearch"
-  placeholder="附近推荐"
-/>
-</view>
-<foods-list></foods-list>
-<foods-list></foods-list>
-
-</view>
->>>>>>> origin/master

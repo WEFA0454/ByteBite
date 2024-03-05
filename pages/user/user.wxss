@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* pages/user/user.wxss */
 .userContainer{
   min-height: 150px;
@@ -106,6 +106,3 @@
   transform: rotate(45deg);
    
 }
-=======
-/* pages/user/user.wxss */
->>>>>>> origin/master

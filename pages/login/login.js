@@ -1,4 +1,4 @@
-// pages/login.js
+let db=wx.cloud.database()
 Page({
 
   /**
@@ -19,6 +19,63 @@ Page({
 go_sign(){
   wx.navigateTo({
     url: '/pages/sign/sign',
+  })
+},
+//用户点击登录
+submit(e){
+  let id=e.detail.value
+  if(!id.phone){
+    wx.showToast({
+      title: '请输入手机号',
+      icon:'none'
+    })
+    return;
+  }else if(!id.password){
+    wx.showToast({
+      title: '请输入密码',
+      icon:'none'
+    })
+  }else{
+    //输入完整
+    wx.showLoading({
+      title: '登录中',
+    })
+    db.collection("users").where({
+      phone:id.phone,
+      password:id.password
+    }).get()
+    .then(res=>{
+      wx.hideLoading()
+      if(res.data.length){
+        
+        console.log(res.data);
+        wx.showToast({
+          title: '登录成功',
+          icon:'none'
+        })
+        setTimeout(()=>
+        {wx.switchTab({
+          url: '/pages/explore/explore',
+        })},500)
+      }else{
+        wx.showToast({
+          title: '账号不存在或者密码错误',
+          icon:'none'
+        })
+      }
+    })
+    .catch(err=>{
+      wx.showToast({
+        title: '错误，请重试',
+        icon:'none'
+      })
+      wx.hideLoading()
+    })
+  }
+},
+go_explore(){
+  wx.navigateTo({
+    url: '/pages/explore/explore',
   })
 },
 

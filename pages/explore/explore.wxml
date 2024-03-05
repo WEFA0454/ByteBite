@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!--pages/explore/explore.wxml-->
 <!--index.wxml-->
 <view class="chat-container">
@@ -40,7 +40,3 @@
   </view>
 </view>
 
-=======
-<!--pages/explore/explore.wxml-->
-<text>我是发现页</text>
->>>>>>> origin/master

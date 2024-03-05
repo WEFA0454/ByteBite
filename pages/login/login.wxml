@@ -8,15 +8,15 @@
     <form bindsubmit="submit">
       <view class="item">
         <view class="title">账号/手机号</view>
-          <input type="text" placeholder="请输入你的账号"/>
+          <input name="phone" type="text" placeholder="请输入你的账号"/>
       </view>
 
       <view class="item">
         <view class="title">密码</view>
-          <input type="text" placeholder="请输入你的密码"/>
+          <input name="password" type="password" placeholder="请输入你的密码"/>
       </view>
 
-      <button style="margin-top:80rpx" type="primary">登录</button>  
+      <button  form-type="submit" style="margin-top:80rpx" type="primary">登录</button>  
     </form>
   </view>
   <!--用户前往注册页面-->

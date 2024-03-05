@@ -1,13 +1,12 @@
 // app.js
 App({
   onLaunch() {
-<<<<<<< HEAD
     //初始化开发环境 xyt0305
     if(!wx.cloud){
       console.error('未启用云开发环境');
     }else{
       wx.cloud.init({
-        env:"",//云开发环境的id号
+        env:"clmn-5grv1e6qc0c699ee",//云开发环境的id号
         traceUser:true,
       })
     }
@@ -15,9 +14,6 @@ App({
     //导入npm包
     const myPackage = require('packageName')
     const packageOther = require('packageName/other')
-=======
-    // 展示本地存储能力
->>>>>>> origin/master
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)

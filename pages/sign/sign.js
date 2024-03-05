@@ -1,4 +1,4 @@
-// pages/sign/sign.js
+let db=wx.cloud.database()//操作数据库
 Page({
 
   /**
@@ -33,14 +33,67 @@ Page({
         icon:'none'
       })
     }
-    else if(!id.paseword!=id.con_pass){
+    else if(id.paseword==id.con_pass){
       wx.showToast({
         title: '密码不一致',
         icon:'none'
       })
-      return;
     }
-    
+    else{
+      //把用户信息录入数据库，判断该手机号是否被注册
+      db.collection("users").where({phone:id.phone}).get()
+      .then(res=>{
+        if(res.data.length)//已存在
+        {
+          wx.showToast({
+            title: '此手机号已经注册',
+            icon:'none'
+          })
+        }else{
+          this.add_user(id.nickname,id.phone,id.password)
+        }
+      })
+      .catch(err=>{
+        wx.showToast({
+          title: '失败，请重试',
+          icon:'none'
+        })
+      })
+      return
+    }
+  },
+  //添加用户
+  add_user(nickname,phone,password){
+    let that = this
+    db.collection("users").add({
+      data:{
+        nickname,
+        phone,
+        password,
+        avatarUrl:that.data.avatarUrl
+      }
+    })
+    .then(res=>{
+      wx.showModal({
+        title:'提示',
+        content:'注册成功，是否立即登录',
+        complete:(res=>{
+          if(res.cancel){
+
+          }
+
+          if(res.confirm){
+            that.back()
+          }
+        })
+      })
+    })
+    .catch(err=>{
+      wx.showToast({
+        title: '注册失败，请重试',
+        icon:'none'
+      })
+    })
   },
 
   //用户获取头像信息

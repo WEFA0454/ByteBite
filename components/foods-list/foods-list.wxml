@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <view class="list" style="width:100%;padding: 5px;box-sizing: border-box;display: flex;">
   <view class="item" style="width:48%;padding: 5px; box-sizing: border-box;background: #ffffff;margin: 2px 1%;">
     <view class="foods_image">
@@ -32,39 +32,4 @@
       </view>
     </view>
   </view>
-=======
-<view class="list" style="width:100%;padding: 5px;box-sizing: border-box;display: flex;">
-  <view class="item" style="width:48%;padding: 5px; box-sizing: border-box;background: #ffffff;margin: 2px 1%;">
-    <view class="foods_image">
-      <image 
-      src="https://ts1.cn.mm.bing.net/th/id/R-C.8a47238da1fbdefa55bddd69b33aafc4?rik=CC0%2fpEIUE0Qw5g&riu=http%3a%2f%2fwww.songshuhuwai.cn%2fuploads%2fallimg%2f181220%2f1-1Q22010063M22.jpg&ehk=hdfPAu6b21Or1V95YR3m5uVDynHRXnUITVuRQ%2bsQ2%2fU%3d&risl=&pid=ImgRaw&r=0" 
-      mode="aspectFill"
-      style="width: 100%;height: 150px;"/>
-    </view>
-    <view class="foods-info">
-      <text class="title" style="font-size:14px;text-align: left;line-height: 1.05rem;height: 2.1rem;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;overflow: hidden;color: #434343;text-overflow: ellipsis;display: -webkit-box;word-break: break-all;">这种宝藏店铺一定要推给大家</text>
-      <view class="like" style=" display: flex;justify-content:flex-end;">
-        <image class="like_image" src="good.png"       
-        style="width: 18px;height: 18px;"/>
-        <text class="like_num" style="font-style: normal;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;display :inline-block;font-size:0.7rem;line-height: 1.5rem;color: #434343;">128</text>
-      </view>
-    </view>
-  </view>
-  <view class="item" style="width:48%;padding: 5px; box-sizing: border-box;background: #ffffff;margin: 2px 1%;">
-    <view class="foods_image">
-      <image 
-      src="https://img.tukuppt.com/ad_preview/00/19/57/5c9a01afe7cd3.jpg!/fw/980" 
-      mode="aspectFill"
-      style="width: 100%;height: 150px;"/>
-    </view>
-    <view class="foods-info">
-      <text class="title" style="font-size:14px;text-align: left;line-height: 1.05rem;height: 2.1rem;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;overflow: hidden;color: #434343;text-overflow: ellipsis;display: -webkit-box;word-break: break-all;">好吃不贵！就在学校附近！！！</text>
-      <view class="like" style=" display: flex;justify-content:flex-end;">
-        <image class="like_image" src="good.png"       
-        style="width: 18px;height: 18px;"/>
-        <text class="like_num" style="font-style: normal;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;display :inline-block;font-size:0.7rem;line-height: 1.5rem;color: #434343;">128</text>
-      </view>
-    </view>
-  </view>
->>>>>>> origin/master
 </view>
