@@ -1,0 +1,107 @@
+/* pages/user/user.wxss */
+.userContainer{
+  min-height: 150px;
+}
+.userbar{
+  display: flex;
+  position:relative; 
+  width: max-content;
+  min-width: 100%; 
+  top:5px;
+  min-height: 112px;
+}
+
+.user-avatar{
+  top: 5px;
+  width: 102px;
+  height: 102px;
+  border: 4px solid #f0f0f2;
+  border-radius: 50%;
+  background: #fff;
+}
+.userbar .user-avatar image{
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.user-info{
+  margin-left: 5%;
+  flex-grow:1;
+  display: flex;
+  flex-direction:column;
+}
+
+.user-name{
+  justify-content: center;
+  flex-grow: 1;
+  display:flex;
+  flex-direction:column;
+  font-size: 25px;
+}
+
+.user-introduction{
+  flex-grow: 1;
+  display:flex;
+  flex-direction:column;
+  font-size: 14px;
+  color:darkgrey;
+}
+
+.changeToSetpage{
+ 
+  width: 10px;
+   
+  height: 10px;
+   
+  border-top: 4px solid #C66E1E;
+   
+  border-right: 4px solid #C66E1E;
+   
+  position: absolute;
+   
+  right: 20rpx;
+   
+  transform: rotate(45deg);
+   
+  margin-top:10rpx;
+   
+  }
+.divLine{
+  background: #E59F80;
+  width: 100%;
+  height: 20rpx;
+}
+
+.theme{
+  margin-top: 5px;
+  margin-right: 3%;
+  margin-left: 3%;
+  background-color: white;
+  height:50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.changeToNextpage{
+  flex-direction: column;
+  
+  width: 7px;
+   
+  height: 7px;
+   
+  border-top: 3px solid #C66E1E;
+   
+  border-right: 3px solid #C66E1E;
+   
+  position: absolute;
+  
+  right: 50rpx;
+   
+  transform: rotate(45deg);
+   
+}

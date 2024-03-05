@@ -1,0 +1,32 @@
+<!--pages/user/user.wxml-->
+<view>
+<!--获得数据库中用户头像，用户信息-->
+<view class="userContainer">  
+  <view class="userbar" >
+    <view class="user-avatar">
+    <image src="user.png"></image>
+    </view>
+    <view class="user-info">
+      <view class="user-name">昵称</view>
+      <view class="user-introduction">个人简介</view>
+  </view>
+  </view>
+  <view class="changeToSetpage"></view>
+</view>
+
+<view class="divLine"></view>
+  <!--各种工具框-->
+  <view class="theme">
+    <view class="fontCenter">主题</view>
+    <view class="changeToNextpage" ></view>
+  </view>
+  <view class="theme">口味个性化
+    <view class="changeToNextpage"></view>
+  </view>
+  <view class="theme">个人信息绑定
+    <view class="changeToNextpage"></view>
+  </view>
+  <view class="theme">程序开发信息
+    <view class="changeToNextpage" ></view>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+<!-- 用户注册信息 -->
+<!-- 
+头像 avatarUrl
+手机号 phone
+昵称 nickname
+密码 password
+ -->
+ <view class="user_box">
+ <view class="avatar_box">
+  <image src="{{avatarUrl}}" mpde=""/>
+  <view class="int">点击上传图像</view>
+  <button class="chooseavatar" bindchooseavatar="bindchooseavatar" open-type="chooseAvatar"></button>
+ </view>
+ 
+ <form class="submit" bindsubmit="submit">
+  <view class="item">
+        <image src="/images/nickName.svg"></image>
+          <input type="nickname" name="nickname" placeholder="请输入你的昵称"/>
+      </view>
+
+      <view class="item">
+        <image src="/images/nickName.svg"></image>
+          <input type="text" name="phone" placeholder="请输入你的手机号"/>
+      </view>
+
+      <view class="item">
+        <image src="/images/pass.svg"></image>
+          <input type="password" name="password" placeholder="请输入你的密码"/>
+      </view>
+      <view class="item">
+        <image src="/images/pass.svg"></image>
+          <input type="password"  name="con_pass" placeholder="确认你的密码"/>
+      </view>
+
+      <button form-type="submit" style="margin-top:80rpx" type="primary">注册账号</button>
+ </form>
+
+ <view class="back_box">
+  <view class="title">已有帐号？前往</view>
+  <view bindtap="back" class="back">登录</view>
+ </view>
+ </view>

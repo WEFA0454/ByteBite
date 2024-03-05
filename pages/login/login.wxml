@@ -1,0 +1,27 @@
+<view class="login_box">
+  <view class="introduce_box">
+    <view class="title">您吃了吗</view>   
+  </view>
+
+  <!-- 用户输入账号密码-->
+  <view class="user_box">
+    <form bindsubmit="submit">
+      <view class="item">
+        <view class="title">账号/手机号</view>
+          <input type="text" placeholder="请输入你的账号"/>
+      </view>
+
+      <view class="item">
+        <view class="title">密码</view>
+          <input type="text" placeholder="请输入你的密码"/>
+      </view>
+
+      <button style="margin-top:80rpx" type="primary">登录</button>  
+    </form>
+  </view>
+  <!--用户前往注册页面-->
+  <view class="sign">
+    <view class="title">没有账号？</view>
+    <view bindtap="go_sign" class="go_sign">注册账号</view>
+  </view>
+</view>
