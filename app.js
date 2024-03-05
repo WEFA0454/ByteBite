@@ -1,6 +1,15 @@
 // app.js
 App({
   onLaunch() {
+    //初始化开发环境 xyt0305
+    if(!wx.cloud){
+      console.error('未启用云开发环境');
+    }else{
+      wx.cloud.init({
+        env:"",//云开发环境的id号
+        traceUser:true,
+      })
+    }
     // 展示本地存储能力
     //导入npm包
     const myPackage = require('packageName')

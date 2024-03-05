@@ -54,6 +54,7 @@ Page({
         title: '上传中',
       })
       let time = Date.now()//获取当前时间段
+      // 这里把获得的头像地址存入数据库中，暂时用的云环境的格式
       wx.cloud.uploadFile({
         cloudPath:"users.images/"+time,//文件名
         filePath:avatarUrl//文件
