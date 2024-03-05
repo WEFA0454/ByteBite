@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "compileType": "miniprogram",
   "libVersion": "trial",
@@ -31,4 +32,39 @@
     "tabSize": 2
   },
   "appid": "wxbc4f5e9cab26d27d"
+=======
+{
+  "compileType": "miniprogram",
+  "libVersion": "trial",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "packNpmManually": true,
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "./package.json",
+        "miniprogramNpmDistDir": "./"
+      }
+    ],
+    "coverView": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "enhance": true,
+    "showShadowRootInWxmlPanel": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "auto",
+    "tabSize": 2
+  },
+  "appid": "wxbc4f5e9cab26d27d"
+>>>>>>> origin/master
 }

@@ -1,0 +1,15 @@
+  <view class="rank" style="width:98%;padding: 5px; box-sizing: border-box;background: #ffffff;margin: 2px 1%;display: flex;align-items: center;justify-content: space-around;">
+    <text>1</text>
+    <view class="foods_image" style="flex-shrink: 1;">
+      <image 
+      src="https://img.zcool.cn/community/01f75f5be99c93a80121ab5d961867.jpg@1280w_1l_2o_100sh.jpg" 
+      mode="scaleToFill"
+      style="width: 80px;height: 80px;"/>
+    </view>
+      <text class="title" style="font-size:14px;text-align: left;line-height: 1.05rem;height: 2.1rem;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;overflow: hidden;color: #434343;text-overflow: ellipsis;display: -webkit-box;word-break: break-all;">桃额娘私房菜</text>
+      <view class="like" style=" display: flex;flex-shrink: 1;">
+        <image class="like_image" src="good.png"       
+        style="width: 18px;height: 18px;"/>
+        <text class="like_num" style="font-style: normal;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;display :inline-block;font-size:0.7rem;line-height: 1.5rem;color: #434343;">128</text>
+    </view>
+  </view>

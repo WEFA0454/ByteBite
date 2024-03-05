@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--pages/user/user.wxml-->
 <view>
 <!--获得数据库中用户头像，用户信息-->
@@ -30,3 +31,7 @@
     <view class="changeToNextpage" ></view>
   </view>
 </view>
+=======
+<!--pages/user/user.wxml-->
+<text>我是用户页</text>
+>>>>>>> origin/master

@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 <!--pages/sports/sports.wxml-->
 <text>pages/sports/sports.wxml</text>
+=======
+<!--pages/sports/sports.wxml-->
+<text>我是数据页</text>
+>>>>>>> origin/master

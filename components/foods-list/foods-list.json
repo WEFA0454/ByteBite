@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 {
   "component": true,
   "usingComponents": {}
+=======
+{
+  "component": true,
+  "usingComponents": {}
+>>>>>>> origin/master
 }

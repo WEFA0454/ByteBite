@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "foods-rank":"../../components/foods-rank/foods-rank"
+  }
+}

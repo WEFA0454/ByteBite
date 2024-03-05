@@ -1,6 +1,7 @@
 // app.js
 App({
   onLaunch() {
+<<<<<<< HEAD
     //初始化开发环境 xyt0305
     if(!wx.cloud){
       console.error('未启用云开发环境');
@@ -14,6 +15,9 @@ App({
     //导入npm包
     const myPackage = require('packageName')
     const packageOther = require('packageName/other')
+=======
+    // 展示本地存储能力
+>>>>>>> origin/master
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)

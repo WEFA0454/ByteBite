@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 page{
   background: -webkit-linear-gradient(top,rgb(244,157,4),#FACF94,white);
+=======
+page{
+  background: -webkit-linear-gradient(top,rgb(244,157,4),#FACF94,white);
+>>>>>>> origin/master
 }

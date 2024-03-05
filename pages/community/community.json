@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "usingComponents": {
     "van-search": "@vant/weapp/search/index",
@@ -5,4 +6,14 @@
     "van-swipe-cell": "@vant/weapp/swipe-cell/index",
     "foods-list":"../../components/foods-list/foods-list"
 }
+=======
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "foods-list":"../../components/foods-list/foods-list"
+},
+"onReachBottomDistance": 50
+>>>>>>> origin/master
 }
