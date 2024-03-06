@@ -2,6 +2,7 @@
 /* pages/user/user.wxss */
 .userContainer{
   min-height: 150px;
+  margin-top: 50px;
 }
 .userbar{
   display: flex;

@@ -5,10 +5,10 @@
 <view class="userContainer">  
   <view class="userbar" >
     <view class="user-avatar">
-    <image src="user.png"></image>
+    <image src="{{user.avatarUrl}}"></image>
     </view>
     <view class="user-info">
-      <view class="user-name">昵称</view>
+      <view class="user-name">{{user.nickname}}</view>
       <view class="user-introduction">个人简介</view>
   </view>
   </view>
@@ -27,7 +27,7 @@
   <view class="theme">个人信息绑定
     <view class="changeToNextpage"></view>
   </view>
-  <view class="theme">程序开发信息
+  <view bindtap="cancle" class="theme">退出登录
     <view class="changeToNextpage" ></view>
   </view>
 </view>

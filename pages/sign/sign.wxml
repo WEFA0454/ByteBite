@@ -9,7 +9,7 @@
  <view class="avatar_box">
   <image src="{{avatarUrl}}" mpde=""/>
   <view class="int">点击上传图像</view>
-  <button class="chooseavatar" bindchooseavatar="bindchooseavatar" open-type="chooseAvatar"></button>
+  <button class="bindchooseavatar" bindchooseavatar="bindchooseavatar" open-type="chooseAvatar"></button>
  </view>
  
  <form class="submit" bindsubmit="submit">

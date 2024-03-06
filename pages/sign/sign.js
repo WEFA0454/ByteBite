@@ -6,7 +6,6 @@ Page({
    */
   data: {
     avatarUrl:"https://tse2-mm.cn.bing.net/th/id/OIP-C.xA5QX2crc3fR5d0DIH-oDQAAAA?w=182&h=182&c=7&r=0&o=5&dpr=1.6&pid=1.7"
-
   },
 
   /**
