@@ -1,8 +1,7 @@
 <view class="flavour">
+<!-- 口味等级部分 -->
   <view class="title">我的口味</view>
-</view>
-
-<view class="set_box">
+  <view class="set_box">
   <view style="background-color: #F0E9AD;" class="setFlavour">
   
     <text class="fla">咸</text>
@@ -29,4 +28,12 @@
       <image  src="{{item.rank>score_spicy?score_empty:score_full}}"></image>
     </view>
   </view>
+  </view>
+<!-- 忌口部分 -->
+<view class ="dislike">
+  <view class="hate_title">忌口</view>
+  <view class="hate">
+  <input type="string" name="hate" placeholder="请输入你不喜爱的食材"/>
+</view>
+</view>
 </view>

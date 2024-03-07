@@ -1,3 +1,5 @@
+//获取数据库
+let db = wx.cloud.database()
 // pages/flavour/flavour.js
 Page({
 
@@ -47,10 +49,10 @@ Page({
         rank:10,
       },
     ],
-    score_salty:5,
-    score_sweet:5,
-    score_sour:5,
-    score_spicy:5,
+    score_salty:"{{salty}}",
+    score_sweet:"{{sweet}}",
+    score_sour:"{{sour}}",
+    score_spicy:"{{spicy}}",
 
     score_full:'/images/score_full.svg',
     score_empty:'/images/score.svg',
@@ -84,7 +86,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    
   },
 
   /**
