@@ -11,7 +11,7 @@
   min-width: 100%; 
   top:5px;
   min-height: 112px;
-}
+} 
 
 .user-avatar{
   top: 5px;

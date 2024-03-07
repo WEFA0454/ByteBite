@@ -1,0 +1,32 @@
+<view class="flavour">
+  <view class="title">我的口味</view>
+</view>
+
+<view class="set_box">
+  <view style="background-color: #F0E9AD;" class="setFlavour">
+  
+    <text class="fla">咸</text>
+    <view class="score" wx:for="{{scoreImg}}" wx:key="rank" bindtap='select_salty' data-index="{{item.id}}">
+      <image  src="{{item.rank>score_salty?score_empty:score_full}}"></image>
+    </view>
+    </view>
+    
+  <view style="background-color:#FFCDFA" class="setFlavour">
+    <text class="fla">甜</text>
+    <view class="score" wx:for="{{scoreImg}}" wx:key="rank" bindtap='select_sweet' data-index="{{item.id}}">
+      <image  src="{{item.rank>score_sweet?score_empty:score_full}}"></image>
+    </view>
+  </view>
+  <view class="setFlavour" style="background-color: #C5F1BE;">
+    <text class="fla">酸</text>
+    <view class="score" wx:for="{{scoreImg}}" wx:key="rank" bindtap='select_sour' data-index="{{item.id}}">
+      <image  src="{{item.rank>score_sour?score_empty:score_full}}"></image>
+    </view>
+  </view>
+  <view class="setFlavour" style="background-color: #FBB6B6;">
+    <text class="fla">辣</text>
+    <view class="score" wx:for="{{scoreImg}}" wx:key="rank" bindtap='select_spicy' data-index="{{item.id}}">
+      <image  src="{{item.rank>score_spicy?score_empty:score_full}}"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+/* pages/flavour/flavour.wxss */
+.title{
+  margin: 40px 10px 10px 20px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.setFlavour{
+  margin:20px 20px 10px 20px;
+  height:55px;
+  border-radius: 10px;
+  display:flex ;
+  flex-direction: column;
+}
+
+.set_box .setFlavour{
+  display:flex ;
+  flex-direction: row;
+}
+
+.set_box .setFlavour .score{
+  width: 8%;
+  height: 50;
+  display: flex;
+  display: inline-block;
+}
+.set_box .setFlavour image{
+  height:100%;
+  width: 100%;
+  display: inline-block;
+}
+
+.set_box .setFlavour .fla{
+  font-weight: bold;
+  font-size: 60rpx;
+  height: 50;
+  width: 15%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

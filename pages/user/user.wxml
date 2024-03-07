@@ -9,7 +9,7 @@
     </view>
     <view class="user-info">
       <view class="user-name">{{user.nickname}}</view>
-      <view class="user-introduction">个人简介</view>
+      <view class="user-introduction">{{information}}</view>
   </view>
   </view>
   <view class="changeToSetpage"></view>
@@ -21,10 +21,10 @@
     <view class="fontCenter">主题</view>
     <view class="changeToNextpage" ></view>
   </view>
-  <view class="theme">口味个性化
+  <view bindtap="toFlavour" class="theme">口味个性化
     <view class="changeToNextpage"></view>
   </view>
-  <view class="theme">个人信息绑定
+  <view class="theme" bind:tap="toFlavour">个人信息绑定
     <view class="changeToNextpage"></view>
   </view>
   <view bindtap="cancle" class="theme">退出登录
