@@ -54,6 +54,7 @@ submit(e){
         
         console.log(res.data[0]);
         wx.setStorageSync('userInfo', res.data[0])
+        wx.setStorageSync('phone', res.data[0].phone)
         wx.showToast({
           title: '登录成功',
           icon:'none'

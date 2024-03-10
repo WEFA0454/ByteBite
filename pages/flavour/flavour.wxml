@@ -33,7 +33,8 @@
 <view class ="dislike">
   <view class="hate_title">忌口</view>
   <view class="hate">
-  <input type="string" name="hate" placeholder="请输入你不喜爱的食材"/>
-  </view>
+  <input type="text" name="hate" placeholder="请输入你不喜爱的食材" bindinput="ensure"/>
+  <!-- <button style="margin-t>op:130rpx" type="primary" bind:tap="ensure">确定</button>   -->
+</view>
 </view>
 </view>

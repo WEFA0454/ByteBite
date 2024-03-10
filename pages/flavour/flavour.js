@@ -1,5 +1,6 @@
 //获取数据库
 let db = wx.cloud.database()
+
 // pages/flavour/flavour.js
 Page({
 
@@ -49,36 +50,80 @@ Page({
         rank:10,
       },
     ],
-    score_salty:"{{salty}}",
-    score_sweet:"{{sweet}}",
-    score_sour:"{{sour}}",
-    score_spicy:"{{spicy}}",
+    score_salty:5,
+    score_sweet:5,
+    score_sour:5,
+    score_spicy:5,
 
     score_full:'/images/score_full.svg',
     score_empty:'/images/score.svg',
   },
+
+
   select_salty(e){
     this.data.score_salty = e.currentTarget.dataset.index;
     this.setData({
       score_salty : this.data.score_salty,
     })
+    db.collection("users").where({}).update({
+      data:{
+        salty:Number(this.data.score_salty)
+      }
+    }).then(res=>{
+      console.log(res)
+    })
   },
+
   select_sweet(e){
     this.data.score_sweet = e.currentTarget.dataset.index;
     this.setData({
       score_sweet: this.data.score_sweet,
     })
+    db.collection("users").where({}).update({
+      data:{
+        sweet:Number(this.data.score_sweet)
+      }
+    }).then(res=>{
+      console.log(res)
+    })
   },
+
   select_sour(e){
     this.data.score_sour = e.currentTarget.dataset.index;
     this.setData({
       score_sour : this.data.score_sour,
     })
+    db.collection("users").where({}).update({
+      data:{
+        sour:Number(this.data.score_sour)
+      }
+    }).then(res=>{
+      console.log(res)
+    })
   },
+
   select_spicy(e){
     this.data.score_spicy = e.currentTarget.dataset.index;
     this.setData({
       score_spicy : this.data.score_spicy,
+    })
+    db.collection("users").where({}).update({
+      data:{
+        spicy:Number(this.data.score_spicy)
+      }
+    }).then(res=>{
+      console.log(res)
+    })
+  },
+
+  ensure(e){
+    var user_hate=e.detail.value
+    db.collection("users").where({}).update({
+      data:{
+        hate:user_hate
+      }
+    }).then(res=>{
+      console.log(res)
     })
   },
 
@@ -86,7 +131,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    
+    this.setData({
+      user:wx.getStorageSync('userInfo')
+    })
+    var that=this;
+    console.log(this.data.user)
+    db.collection('users').where({
+      phone:that.data.user.phone
+    }).get({
+      success:res =>{
+        console.log("测试",res)
+        that.setData({
+           score_salty:res.data[0].salty,
+           score_sweet:res.data[0].sweet,
+           score_sour:res.data[0].sour,
+           score_spicy:res.data[0].spicy
+         })
+      }
+    })
   },
 
   /**

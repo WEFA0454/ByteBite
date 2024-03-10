@@ -1,10 +1,10 @@
 
-
+let db=wx.cloud.database()//操作数据库
 // pages/explore/explore.js
 var height='170';
 var weight='58';
 var favour='';
-var steps='12000';
+var steps=120;
 var defaultQus=`我想让你成为一个饮食助手，帮我推荐合适的饮食，
                 我的身高是${height}cm，体重是${weight}kg,今日步数是${steps}，
                 结合我的体征和热量，根据地理位置、时令、季节、时间等多方面因素，为我推荐
@@ -23,6 +23,9 @@ Page({
   
   onLoad: function() {  
     this.initWebSocket();  
+    this.setData({
+      user:wx.getStorageSync('userInfo')
+    });
   },  
   
   // 初始化 WebSocket 连接  
