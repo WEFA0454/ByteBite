@@ -3,4 +3,5 @@
 <div>
   <input bindinput="bindInputChange" class="input" name="userName" placeholder="请输入问题" auto-focus="true" />
   <button bindtap="sendMessage" class="submit">发送</button>>
+  <text class="responsetext">{{responseText}}</text>  
 </div>
