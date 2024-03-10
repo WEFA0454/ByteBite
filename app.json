@@ -9,7 +9,9 @@
     "pages/sports/sports",
     "pages/user/user",
     "pages/search/search",
-    "pages/rank/rank"
+    "pages/rank/rank",
+    "pages/flavour/flavour",
+    "pages/information/information"
 
   ],
   "window": {

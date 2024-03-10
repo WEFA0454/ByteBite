@@ -1,4 +1,4 @@
-
+let db=wx.cloud.database()//操作数据库
 // pages/user/user.js
 Page({
 
@@ -6,14 +6,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    information:"个人简介"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData({
+      user:wx.getStorageSync('userInfo')
+    })
   },
 
   /**
@@ -21,6 +23,37 @@ Page({
    */
   onReady() {
 
+  },
+  toFlavour(){
+    wx.navigateTo({
+      url: '/pages/flavour/flavour',
+    })
+  },
+
+  toInfo(){
+    wx.navigateTo({
+      url: '/pages/information/information',
+    })
+  },
+  cancle(){
+    wx.showModal({
+      content: '是否退出',
+      complete: (res) => {
+        if (res.cancel) {
+          wx.showToast({
+            title: '不退出',
+            icon:'none'
+          })
+        }
+    
+        if (res.confirm) {
+          wx.removeStorageSync('userInfo')
+          wx.navigateTo({
+            url: '/pages/login/login',
+          })
+        }
+      }
+    })
   },
 
   /**

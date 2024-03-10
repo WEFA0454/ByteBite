@@ -1,8 +1,8 @@
 
-<!--pages/sports/sports.wxml-->
-<<<<<<< HEAD
 <text>我是数据页</text>
 =======
+=======
+>>>>>>> 01469106a1fb5020cbfa9cd1a2f83b564254e4d8
 <view class="sports-container">
   <view class="personal-data" style="margin-left:10px;border: 10rpx solid #693f2bd5;display: flex;margin-right: 10px;margin-top: 15px;height: 180px;justify-content: space-around;align-items: center;background-color: white;border-radius: 25rpx;">
     <view class="slider" style="width: 60%;">
@@ -44,4 +44,3 @@
     </view>
   </view>
 </view>
->>>>>>> a1c7e2f7fc14ab0e7a88df69a3943525cfae92f1

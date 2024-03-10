@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 {
   "appid": "wxbc4f5e9cab26d27d",
-  "projectname": "clmn",
   "compileType": "miniprogram",
   "libVersion": "3.3.4",
   "packOptions": {
@@ -27,38 +25,6 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
-  },
-  "editorSetting": {
-    "tabIndent": "auto",
-    "tabSize": 2
-  }
-=======
-{
-  "compileType": "miniprogram",
-  "libVersion": "trial",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
-  "setting": {
-    "packNpmManually": true,
-    "packNpmRelationList": [
-      {
-        "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "./"
-      }
-    ],
-    "coverView": true,
-    "es6": true,
-    "postcss": true,
-    "minified": true,
-    "enhance": true,
-    "showShadowRootInWxmlPanel": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
     },
     "ignoreDevUnusedFiles": false,
     "ignoreUploadUnusedFiles": false
@@ -68,6 +34,7 @@
     "tabIndent": "auto",
     "tabSize": 2
   },
-  "appid": "wxbc4f5e9cab26d27d"
->>>>>>> a1c7e2f7fc14ab0e7a88df69a3943525cfae92f1
+  "cloudfunctionRoot": "cloudfunctions/",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+  "projectname": "clmn"
 }

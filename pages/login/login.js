@@ -12,7 +12,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    if(wx.getStorageSync('userInfo')){//用户保留登陆状态
+    wx.switchTab({
+      url: '/pages/explore/explore',
+    })
+  }
   },
 
   //前往注册页面
@@ -44,11 +48,12 @@ submit(e){
       phone:id.phone,
       password:id.password
     }).get()
-    .then(res=>{
+    .then(res=>{  
       wx.hideLoading()
       if(res.data.length){
         
-        console.log(res.data);
+        console.log(res.data[0]);
+        wx.setStorageSync('userInfo', res.data[0])
         wx.showToast({
           title: '登录成功',
           icon:'none'

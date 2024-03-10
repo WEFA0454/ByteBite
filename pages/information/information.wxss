@@ -1,0 +1,9 @@
+.sport{
+  margin: 30px 20px 20px 10px ;
+  border-bottom :10rpx solid rgb(109, 59, 21);
+}
+
+.sport text{
+  font-weight: bold;
+  font-size: larger;
+}

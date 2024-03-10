@@ -1,5 +1,5 @@
 
 page{
-  background: -webkit-linear-gradient(top,rgb(244,157,4),#FACF94,white);
+  background: -webkit-linear-gradient(top,#FFC397,#FFE0C9,#fff);
 
 }
