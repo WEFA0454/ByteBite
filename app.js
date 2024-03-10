@@ -1,3 +1,4 @@
+
 // app.js
 App({
   onLaunch() {
@@ -12,8 +13,6 @@ App({
     }
     // 展示本地存储能力
     //导入npm包
-    const myPackage = require('packageName')
-    const packageOther = require('packageName/other')
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
@@ -22,10 +21,15 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        if(res.code){
+          
+        }else{
+          console.log('登陆失败！'+res.errMsg)
+        }
       }
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
   }
 })

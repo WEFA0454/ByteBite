@@ -48,7 +48,7 @@ submit(e){
       phone:id.phone,
       password:id.password
     }).get()
-    .then(res=>{
+    .then(res=>{  
       wx.hideLoading()
       if(res.data.length){
         

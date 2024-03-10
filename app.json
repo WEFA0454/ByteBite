@@ -10,7 +10,8 @@
     "pages/user/user",
     "pages/search/search",
     "pages/rank/rank",
-    "pages/flavour/flavour"
+    "pages/flavour/flavour",
+    "pages/information/information"
 
   ],
   "window": {

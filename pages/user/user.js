@@ -29,6 +29,12 @@ Page({
       url: '/pages/flavour/flavour',
     })
   },
+
+  toInfo(){
+    wx.navigateTo({
+      url: '/pages/information/information',
+    })
+  },
   cancle(){
     wx.showModal({
       content: '是否退出',

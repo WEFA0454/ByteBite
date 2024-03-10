@@ -34,6 +34,6 @@
   <view class="hate_title">忌口</view>
   <view class="hate">
   <input type="string" name="hate" placeholder="请输入你不喜爱的食材"/>
-</view>
+  </view>
 </view>
 </view>
