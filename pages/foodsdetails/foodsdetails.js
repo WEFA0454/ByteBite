@@ -1,12 +1,11 @@
-
-// pages/community/community.js
+// pages/foodsdetails/foodsdetails.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    value:""
+
   },
 
   /**
@@ -57,15 +56,7 @@ Page({
   onReachBottom() {
 
   },
-<<<<<<< HEAD
 
-=======
-  OnDetailClick(){
-    wx.navigateTo({
-      url: '/pages/sharedetails/sharedetails',
-    })
-  },
->>>>>>> 82aebec (sure)
   /**
    * 用户点击右上角分享
    */
