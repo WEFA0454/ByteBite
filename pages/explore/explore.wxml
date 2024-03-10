@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!--pages/explore/explore.wxml-->
 <!--index.wxml-->
@@ -40,3 +41,11 @@
   </view>
 </view>
 
+=======
+<!--pages/explore/explore.wxml-->
+<text>你有什么问题想问饮食管家吗</text>
+<div>
+  <input bindinput="bindInputChange" class="input" name="userName" placeholder="请输入问题" auto-focus="true" />
+  <button bindtap="sendMessage" class="submit">发送</button>>
+</div>
+>>>>>>> a1c7e2f7fc14ab0e7a88df69a3943525cfae92f1

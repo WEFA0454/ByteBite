@@ -26,6 +26,11 @@ Page({
 
   },
   //搜索框内内容改变
+  onChange1(e){
+    this.setData({
+      value: e.detail,
+    });
+  },
   onChange(e){
     this.setData({
       value: e.detail,
