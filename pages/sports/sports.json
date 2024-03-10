@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "usingComponents": {}
-=======
   "usingComponents": {
     "van-slider": "@vant/weapp/slider/index"
   }
->>>>>>> b24629d76bc0df6e0ba2475065ee78725e4086f2
 }

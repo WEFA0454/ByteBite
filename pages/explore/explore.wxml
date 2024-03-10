@@ -1,6 +1,2 @@
 <!--pages/explore/explore.wxml-->
 <text>我是发现页</text>
-<<<<<<< HEAD
-<button bind:tap="nextstepbutton">下一步</button>
-=======
->>>>>>> b24629d76bc0df6e0ba2475065ee78725e4086f2

@@ -26,14 +26,11 @@ Page({
 
   },
   //搜索框内内容改变
-<<<<<<< HEAD
-=======
   onChange1(e){
     this.setData({
       value: e.detail,
     });
   },
->>>>>>> b24629d76bc0df6e0ba2475065ee78725e4086f2
   onChange(e){
     this.setData({
       value: e.detail,
