@@ -1,13 +1,30 @@
 // pages/explore/explore.js
+<<<<<<< HEAD
 import { callGPTAPI } from '../../api/callgpt';
 
 Page({
  /**
+=======
+Page({
+
+  /**
+>>>>>>> b24629d76bc0df6e0ba2475065ee78725e4086f2
    * 页面的初始数据
    */
   data: {
 
   },
+<<<<<<< HEAD
+=======
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
+
+  },
+
+>>>>>>> b24629d76bc0df6e0ba2475065ee78725e4086f2
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -55,6 +72,7 @@ Page({
    */
   onShareAppMessage() {
 
+<<<<<<< HEAD
   },
 
    // 生命周期函数--监听页面加载
@@ -111,3 +129,7 @@ Page({
 
   // ...其他页面代码...
 });
+=======
+  }
+})
+>>>>>>> b24629d76bc0df6e0ba2475065ee78725e4086f2

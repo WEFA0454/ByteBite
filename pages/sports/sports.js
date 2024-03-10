@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
 
+=======
+    h:"50",
+    w:"100",
+    steps:"15087",
+    calories:"2123.6"
+>>>>>>> b24629d76bc0df6e0ba2475065ee78725e4086f2
   },
 
   /**
@@ -14,7 +21,10 @@ Page({
   onLoad(options) {
 
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> b24629d76bc0df6e0ba2475065ee78725e4086f2
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -62,5 +72,20 @@ Page({
    */
   onShareAppMessage() {
 
+<<<<<<< HEAD
   }
+=======
+  },
+  onChange1(e){
+    this.setData({
+      h:e.detail,
+    });
+  },
+  onChange2(e){
+    this.setData({
+      w:e.detail,
+    });
+  }
+
+>>>>>>> b24629d76bc0df6e0ba2475065ee78725e4086f2
 })
