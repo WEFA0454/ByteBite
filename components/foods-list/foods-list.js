@@ -1,3 +1,4 @@
+
 // components/foods-list/foods-list.js
 Component({
 

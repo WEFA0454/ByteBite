@@ -1,0 +1,46 @@
+/* pages/login.wxss */
+.login_box{
+  margin: 200rpx 40rpx 0rpx 40rpx;
+}
+
+.introduce_box{
+  border-bottom :10rpx solid rgb(109, 59, 21);
+}
+
+.introduce_box .title{
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.user_box{
+  margin-top: 40px;
+}
+
+.user_box .item{
+  margin-bottom: 30px;
+  border-bottom: 1rpx solid grey;
+  padding:10rpx;
+}
+
+.user_box .item .title{
+  font-weight: bold;
+  margin-bottom: 8rpx;
+}
+
+.sign{
+  margin-top:40rpx;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign .title{
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+.sign .go_sign{
+  font-size: 9pt;
+  color:#0066ff;
+  border-bottom: 1rpx solid gray;
+}

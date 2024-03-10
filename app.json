@@ -1,11 +1,17 @@
+
 {
   "pages": [
+     
+    "pages/sign/sign",
+    "pages/login/login",
     "pages/explore/explore",
     "pages/community/community",
     "pages/sports/sports",
     "pages/user/user",
     "pages/search/search",
-    "pages/rank/rank"
+    "pages/rank/rank",
+    "pages/flavour/flavour",
+    "pages/information/information"
 
   ],
   "window": {
