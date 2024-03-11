@@ -1,0 +1,42 @@
+
+<view class="details-container " style="margin-top: 15px;">
+<text style="margin-left: 45px;margin-top: 20px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: x-large;color: white;">在这里 分享精彩生活</text>
+<view style="margin-top: 20px;margin-left: 10px;margin-right: 10px;">
+<van-cell-group>
+  <van-field
+    placeholder="请输入标题...（18字以内）"
+    bind:change="onChange"
+    bind:confirm="onSearch"
+    auto-focus="true"
+    autosize
+    maxlength="50"
+  />
+</van-cell-group>
+</view>
+<view style="margin-top: 20px;margin-left: 10px;margin-right: 10px;">
+
+<van-cell-group>
+  <van-field
+    placeholder="请输入文字内容...（120字以内），您上传的内容在审核过后将上传平台，请耐心等待"
+    bind:change="onChange"
+    bind:confirm="onSearch"
+    auto-focus="true"
+    type="textarea"
+    autosize
+    maxlength="50"
+    input-class="textarea" 
+  />
+</van-cell-group>
+</view>
+<view class="pictureupload" style="margin-top: 20px;margin-left: 10px;">
+<van-uploader file-list="{{ fileList }}" />
+</view>
+<view class="upbn" style="margin-left: 30px;margin-top: 20px;">
+<van-button
+  type="default"
+  bind:click="Onrankclick"
+  hairline
+  color="#FFA500"
+  >⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　　⁣⁣　　⁣⁣⁣⁣上传⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣</van-button>
+</view>
+</view>

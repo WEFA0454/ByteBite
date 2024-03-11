@@ -1,0 +1,5 @@
+/* pages/sharedetails/sharedetails.wxss */
+.textarea{
+  min-height: 150px !important; 
+  text-align:center;
+  max-height: 350px ;}

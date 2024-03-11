@@ -1,3 +1,4 @@
+
 // pages/community/community.js
 Page({
 
@@ -54,18 +55,17 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-    //拿到数据之后要具体修改
+
   },
-  Clicksearch(){
+<<<<<<< HEAD
+
+=======
+  OnDetailClick(){
     wx.navigateTo({
-      url: '/pages/search/search',
+      url: '/pages/sharedetails/sharedetails',
     })
   },
-  Onrankclick(){
-    wx.navigateTo({
-      url: '/pages/rank/rank',
-    })
-  },
+>>>>>>> 82aebec (sure)
   /**
    * 用户点击右上角分享
    */

@@ -1,3 +1,5 @@
+
+
 // pages/explore/explore.js
 var height='170';
 var weight='58';
@@ -7,11 +9,10 @@ var defaultQus=`我想让你成为一个饮食助手，帮我推荐合适的饮�
                 我的身高是${height}cm，体重是${weight}kg,今日步数是${steps}，
                 结合我的体征和热量，根据地理位置、时令、季节、时间等多方面因素，为我推荐
                 我的主食。请按照
-                1.麻辣烫
-                2.蔬菜沙拉
-                3.西冷牛排
-                的例子的形式进行回答，注意不要有多的解释，直接返回序号和菜名，推荐的菜的个数不要超过3个。\
-                其中返回的json格式应该为{"recommendations":[{"number":,"dish":},]}`;
+                1.菜名
+                2.菜名
+                3.菜名
+                的形式进行回答。`;
 var Ques=``;
 export {defaultQus,Ques};
 Page({  
@@ -48,20 +49,10 @@ Page({
     });  
   
     // 监听 WebSocket 接收消息事件  
-    this.data.socketTask.onMessage((message) => { 
-       console.log('收到服务器内容', message);
-       const str = JSON.stringify(message);
-       //console.log(str);
-       // 解析外层字符串得到内层JSON对象  
-        const outerParsed = JSON.parse(str);  
-        //console.log(outerParsed);
-        // 解析内层JSON字符串得到菜品数组  
-        const innerParsed = JSON.parse(outerParsed.data); 
-        //console.log(innerParsed);
-        // 提取菜品并存入数组  
-        const dishesArray = innerParsed.recommendations.map(recommendation => recommendation.dish);  
-        console.log(dishesArray);
-    });
+    this.data.socketTask.onMessage((message) => {  
+      console.log('收到服务器内容', message.data);  
+      // 在这里处理服务器返回的数据，比如更新页面内容  
+    });  
   
     // 监听 WebSocket 关闭事件  
     this.data.socketTask.onClose((res) => {  

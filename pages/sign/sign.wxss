@@ -1,0 +1,58 @@
+/* pages/sign/sign.wxss */
+.user_box{
+  margin: 10px 20px 0px 20px ;
+}
+.avatar_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+  position: relative;
+  border-radius: 10%;
+}
+
+
+.chooseavatar{
+  position:absolute;
+  height: 200rpx;
+  width:200rpx;
+  opacity: 0;
+}
+.avatar_box image{
+  width: 200rpx;
+  height:200rpx;
+  border-radius: 10%;
+}
+
+.avatar_box .int{
+  font-size:9pt;
+  color:#7f7f7f;
+  margin-top: 10rpx;
+}
+
+.submit .item image{
+  width: 60rpx;
+  height:60rpx;
+}
+
+.submit .item{
+  display: flex;
+  margin-top: 10px;
+  border:2px solid gray;
+  padding:10rpx;
+  border-radius: 20px;
+}
+
+.back_box{
+  display: flex;
+  margin-top: 10px;
+}
+
+.back_box .title{
+  font-size: 9pt;
+}
+.back_box .back{
+  font-size: 9pt;
+  color:#0066ff;
+  border-bottom: 2rpx solid gray;
+}

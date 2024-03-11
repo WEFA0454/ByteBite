@@ -1,18 +1,25 @@
+
 <!--pages/community/community.wxml-->
 <view class="community-container">
 <view style="display: flex;justify-content:space-evenly;margin-top:6px;">
+  <van-button 
+  type="default"
+  hairline
+  >⁣⁣⁣⁣⁣⁣⁣⁣　　⁣⁣⁣⁣⁣⁣⁣附近推荐⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣</van-button>
   <van-button
   type="default"
-  bind:click="Onrankclick"
   hairline
-  >⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　　⁣⁣⁣⁣　　⁣⁣⁣⁣　　⁣⁣⁣⁣排行榜⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　　　⁣⁣⁣⁣⁣</van-button>
+  >⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣排行榜⁣⁣⁣⁣　⁣⁣⁣⁣　　⁣⁣⁣⁣⁣</van-button>
 </view>
 <view class="header">
  
   <van-search
   value="{{ value }}"
   shape="round"
+
   background="#FF8C00"
+  placeholder="请输入搜索关键词"
+  background="	#FFA500"
   bind:tap="Clicksearch"
   disabled bind:focus="Clicksearch"
   placeholder="附近推荐"
@@ -20,5 +27,8 @@
 </view>
 <foods-list></foods-list>
 <foods-list></foods-list>
-
+<foods-list></foods-list>
+<foods-list></foods-list>
+<foods-list></foods-list>
+<van-button type="default" round="true" size="normal" color="#FFA500"  bind:click="OnDetailClick" style="position: fixed;bottom: 10px;right: 10px;">+</van-button>
 </view>
