@@ -57,15 +57,11 @@ Page({
   onReachBottom() {
 
   },
-<<<<<<< HEAD
-
-=======
   OnDetailClick(){
     wx.navigateTo({
       url: '/pages/sharedetails/sharedetails',
     })
   },
->>>>>>> 82aebec (sure)
   /**
    * 用户点击右上角分享
    */
