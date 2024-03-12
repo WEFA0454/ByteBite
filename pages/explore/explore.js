@@ -94,12 +94,13 @@ Page({
        const innerParsed = JSON.parse(outerParsed.data);  
        //console.log(innerParsed); 
        // 提取菜品并存入数组   
-       const dishesArray = innerParsed.recommendations.map(recommendation => recommendation.dish);   
+       const dishesArray = innerParsed.recommendations.map(recommendation => recommendation.dish);  
        console.log(dishesArray);
        this.setData({
         recommendation: dishesArray
       });
-      
+       console.log(Array.isArray(dishesArray));  
+       console.log(dishesArray instanceof Array);
     });  
   
     // 监听 WebSocket 关闭事件  

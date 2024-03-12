@@ -12,7 +12,8 @@
     "pages/information/information",
     "pages/sharedetails/sharedetails",
     "pages/foodsdetails/foodsdetails",
-    "pages/takeaway/takeaway"
+    "pages/takeaway/takeaway",
+    "pages/cookbook/cookbook"
   ],
   "window": {
     "navigationBarTextStyle": "black",

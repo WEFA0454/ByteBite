@@ -1,27 +1,14 @@
 {
   "name": "clmn",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "xyt",
-=======
   "description": "",
->>>>>>> origin/master
   "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-<<<<<<< HEAD
-  "author": "galland",
-  "license": "ISC",
-  "dependencies": {
-    "@vant/weapp": "^1.11.4"
-  },
-  "devDependencies": {}
-=======
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@vant/weapp": "^1.11.4"
   }
->>>>>>> origin/master
 }
