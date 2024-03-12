@@ -1,11 +1,11 @@
-// pages/takeaway/takeaway.js
+// pages/cookbook/cookbook.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    value:""
+
   },
 
   /**
@@ -62,16 +62,5 @@ Page({
    */
   onShareAppMessage() {
 
-  },
-
-  shipubutton:function(){
-    wx.navigateTo({
-      url: '/pages/cookbook/cookbook',
-    })
-  },
-  waimaibutton:function(){
-    wx.navigateTo({
-      url: '',
-    })
   }
 })

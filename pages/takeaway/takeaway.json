@@ -1,3 +1,5 @@
 {
-  "usingComponents": { }
+  "usingComponents": {
+    "takeaway-list":"../../components/takeaway-list/takeaway-list"
+   }
 }

@@ -1,0 +1,30 @@
+<!--pages/cookbook/cookbook.wxml-->
+<view class="cookbook">
+  <view class="header" style=" display: flex;margin-left: 20px;margin-top: 20px;">
+    <text style="font-size: 40px;font-weight: bolder;text-align: right;margin-right:20px;margin-top: 40px;">麻辣烫</text>
+    <image src="/pages/cookbook/mlt.jpg" style="float:right;width: 200px;height: 180px;"></image>
+  </view>
+  <view class="shicai">
+  <text style="font-size: 30px;font-weight: bold;">食材:\n</text>
+  <text style="font-size: 20px;">方便面一块   蔬菜青笋100g  香菇3朵   
+                                                    肉类午餐肉100g   火腿肠100g  
+                                                    鱼丸类鱼丸100g   鱼豆腐100g   麻酱100g  
+                                                     生抽15g   醋20g  糖20g  盐10g  芝麻油15g   
+                                                     豆瓣辣酱35g  火锅底料50g  葱段50g  
+                                                     姜片3-4片  蒜末50g   香菜末（可省略）10g
+                                                     油（炒底料）25g   牛奶300g。</text>
+  </view>
+<view class="zuofa" style="background-color: #b9a68f;">
+  <text style="font-size: 30px;font-weight: bold;">制作方法\n</text>
+  <text style="font-size: 20px;">
+  1.麻酱也是麻辣烫的灵魂，也很关键。按照比例将所有的调料混合。麻酱的稀稠度可以用适量的水调节。毕竟每个牌子的麻酱都不太一样。\n
+  2.锅中倒入油，倒入葱段和姜片，煸炒几下出味道。
+  小贴士：麻辣烫这种食物就是万物皆可入锅的，自己喜欢啥，随便加就好了。不用拘泥于本菜谱。加入牛奶可以让口感更加滑爽，不要那么燥辣。\n
+  3.倒入豆瓣酱和火锅底料翻炒几下，注意豆瓣酱比较容易糊。火锅底料融化之后倒入水，这个水的多少要看你的食材有多少哈，也看锅有多大，比较随意。\n
+  4.再次煮开以后，捞出渣子，倒入牛奶。\n
+  5.然后你就到了激动人心的环节，可以放你的喜好的食材了，本着肉类、鱼丸、蔬菜、方便面的原则，把食材依次放入锅内。\n
+  6.所有的食材煮好以后，捞出淋上麻酱，蒜末，能吃香菜的可以撒一些香菜末。当然如果觉得不够辣，可以再来一些辣椒油。\n
+  </text>
+</view>
+
+</view>

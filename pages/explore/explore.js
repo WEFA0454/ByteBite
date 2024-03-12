@@ -80,7 +80,8 @@ Page({
        //console.log(innerParsed); 
        // 提取菜品并存入数组   
        const dishesArray = innerParsed.recommendations.map(recommendation => recommendation.dish);   
-       console.log(dishesArray);  
+       console.log(Array.isArray(dishesArray));  
+       console.log(dishesArray instanceof Array); 
     });  
   
     // 监听 WebSocket 关闭事件  

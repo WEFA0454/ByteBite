@@ -14,7 +14,7 @@
   
 .button {  
   /* 按钮的样式 */  
-  width: 33.3%; /* 或者根据设计需求设置宽度 */  
+  width: 50%; /* 或者根据设计需求设置宽度 */  
   height: 50px;  
   background-color: #FFA500;  
   color: #fff;  
