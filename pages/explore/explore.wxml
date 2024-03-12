@@ -1,4 +1,6 @@
+
 <view class="message-container">
+  <view class="time">现在是：{{currentTime}}</view>
 <view class="bubbleBox" wx:for="{{msgList}}">
     <!-- 右侧的头像昵称 -->
     <view style="text-align: center;">
@@ -22,29 +24,18 @@
   </view>
 
   <view class="dislike">
-    <view class="flavour">
-    <image></image>
-    <text></text>
+    <view hover-stay-time="400000" bindtap="strikeThrough" hover-class='selected' class="{{isStriked ? 'flavour' : 'chooseDislike'}}" wx:for="{{recommendation}}" wx:for-item="item" wx:for-index="index">
+    {{item}}
     </view>
-
-    <view class="flavour">
-    <image></image>
-    <text></text>
-    </view>
-
-    <view class="flavour">
-    <image></image>
-    <text></text>
-    </view>
-
-    <view class="flavour">
-    <image></image>
-    <text></text>
-    </view>
+   
   </view>
 <div>
-
-  <button bindtap="sendMessage" class="submit">点我看看有什么</button>>
+  <input bindinput="bindInputChange" class="input" name="userName" placeholder="输入额外的要求" auto-focus="true" />
+  <button class="next">
+  <navigator url="/pages/takeaway/takeaway" open-type="navigate"> 下一步 </navigator>
+</button>
+  <button bindtap="sendMessage" class="submit">点我看看有什么</button>
 </div>
 
 </view>
+

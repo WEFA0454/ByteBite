@@ -57,7 +57,11 @@ Page({
   onReachBottom() {
 
   },
-
+  OnDetailClick(){
+    wx.navigateTo({
+      url: '/pages/sharedetails/sharedetails',
+    })
+  },
   /**
    * 用户点击右上角分享
    */

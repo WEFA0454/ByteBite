@@ -1,22 +1,38 @@
-// pages/sports/sports.js
+// pages/sharedetails/sharedetails.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    h:"50",
-    w:"100",
-    steps:"15087",
-    calories:"2123.6"
-  },
+    value: '',
+    fileList: [
 
+      // Uploader 根据文件后缀来判断是否为图片文件
+      // 如果图片 URL 中不包含类型信息，可以添加 isImage 标记来声明
+      {
+        url: 'https://img95.699pic.com/photo/50039/3912.jpg_wh860.jpg',
+        name: '图片2',
+        isImage: true,
+        deletable: true,
+      },
+    ],
+  },
+  onChange(e){
+    this.setData({
+      value: e.detail,
+    });
+  },
+  onSearch(){
+    console.log(this.data.value);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
 
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -64,17 +80,5 @@ Page({
    */
   onShareAppMessage() {
 
-  },
-  onChange1(e){
-    this.setData({
-      h:e.detail,
-    });
-  },
-  onChange2(e){
-    this.setData({
-      w:e.detail,
-    });
   }
-
 })
-export {}
