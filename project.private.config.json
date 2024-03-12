@@ -40,5 +40,10 @@
         }
       ]
     }
+  },
+  "projectname": "clmn",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
   }
 }

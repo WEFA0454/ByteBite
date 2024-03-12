@@ -1,6 +1,5 @@
 {
   "appid": "wxbc4f5e9cab26d27d",
-  "projectname": "clmn",
   "compileType": "miniprogram",
   "libVersion": "3.3.4",
   "packOptions": {
@@ -26,12 +25,16 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "ignoreDevUnusedFiles": false,
+    "ignoreUploadUnusedFiles": false
   },
+  "condition": {},
   "editorSetting": {
     "tabIndent": "auto",
     "tabSize": 2
   },
   "cloudfunctionRoot": "cloudfunctions/",
-  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/"
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+  "projectname": "clmn"
 }

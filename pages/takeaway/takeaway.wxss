@@ -1,0 +1,41 @@
+/* pages/takeaway/takeaway.wxss */
+/* 在页面的WXSS文件中 */  
+.button-container {  
+  /* 使用display: flex使容器内的子元素以Flex方式布局 */  
+  display: flex;  
+  /* justify-content控制子元素在主轴（默认为水平方向）上的对齐方式 */  
+  justify-content:space-around; /* 子元素之间的间隔相等，首尾贴边 */  
+  /* 如果你想让按钮均匀分布，包括首尾空间也相等，可以使用space-around */  
+  /* align-items控制子元素在交叉轴（默认为垂直方向）上的对齐方式 */  
+  align-items: center; /* 子元素在垂直方向上居中 */  
+  /* 设置容器的宽度，根据需要调整 */  
+  width: 100%;  
+}  
+  
+.button {  
+  /* 按钮的样式 */  
+  width: 50%; /* 或者根据设计需求设置宽度 */  
+  height: 50px;  
+  background-color: #FFA500;  
+  color: #fff;  
+  border: none;  
+  border-radius: 5px;  
+  text-align: center;  
+  line-height: 50px; /* 垂直居中文本 */  
+  font-size: 18px;  
+  font:bolder;
+  margin-right: 0px; /* 设置按钮之间的间距，最后一个按钮不需要这个间距 */  
+}  
+  
+/* 移除最后一个按钮的右边距 */  
+.button:last-child {  
+  margin-right: 0;  
+}
+
+.choosenfood{
+  background-color: rgb(238, 178, 123);
+   /* 设置高度为视口高度的百分之三十 */  
+   height: 20vh;    
+   padding: 20px;  
+   box-sizing: border-box; /* 确保padding和border不会增加元素的总高度 */  
+}
