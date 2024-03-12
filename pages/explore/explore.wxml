@@ -6,5 +6,5 @@
 <div>
   <input bindinput="bindInputChange" class="input" name="userName" placeholder="请输入问题" auto-focus="true" />
   <button bindtap="sendMessage" class="submit">发送</button>>
-  <button bindtap="nextStep">下一步</button>
+  <navigator url="/pages/takeaway/takeaway" open-type="navigate"> 下一步 </navigator>
 </div>

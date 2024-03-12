@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    value:""
   },
 
   /**
@@ -62,5 +62,21 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  backbuttonclick:function(){
+    wx.navigateTo({
+      url: '/pages/community/community.js',
+    })
+  },
+  shipubutton:function(){
+    wx.navigateTo({
+      url: 'url',
+    })
+  },
+  waimaibutton:function(){
+    wx.navigateTo({
+      url: 'url',
+    })
   }
 })

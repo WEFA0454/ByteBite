@@ -122,17 +122,7 @@ Page({
       userInput: ''  
     });  
   },  
-  //用户点击下一步
-  nextStep:function(){
-    wx.navigateTo({
-      url:  'pages/takeaway/takeaway',
-    })
-     // 获取当前页面的url  
-     let pages = getCurrentPages();  
-     let currentPage = pages[pages.length - 1];  
-     let currentUrl = currentPage.route;  
-     console.log(currentUrl); // 输出当前页面的url
-  },
+
   // 绑定输入框的值变化事件  
   bindInputChange: function(e) {  
     this.setData({  

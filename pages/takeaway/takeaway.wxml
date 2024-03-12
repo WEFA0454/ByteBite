@@ -1,2 +1,13 @@
 <!--pages/takeaway/takeaway.wxml-->
-<text>外卖页</text>
+<view class="community-container">
+  <view class="button-container">  
+  <button class="button" blindtap="waimaibutton">外卖</button>  
+  <button class="button" blindtap="shipubutton">食谱</button>  
+  <button class="button" blindtap="backbuttonclick">返回</button>  
+  </view>
+  <view class="choosenfood">
+  <text>推荐的菜名</text>
+  
+  </view>
+  <list-view>wenzi</list-view>
+</view>
