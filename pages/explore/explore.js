@@ -18,14 +18,30 @@ export {defaultQus,Ques};
 Page({  
   data: {  
     socketTask: null, // WebSocket 任务对象  
-    userInput: '' // 用户输入的内容  
+    userInput: '' ,// 用户输入的内容 
+    msgList:[{
+      content:"我是您的饮食管家,请问下列有哪些是您不喜欢吃的吗？",
+    }],
+    recommendation:[]
   },  
   
   onLoad: function() {  
+    var that = this;
+    var msgList = this.data.msgList;
     this.initWebSocket();  
     this.setData({
       user:wx.getStorageSync('userInfo')
     });
+    // db.collection('users').where({phone:that.data.user.phone}).get({
+    //   fail:res =>{
+    //     console.log("失败")
+    //   },
+    //   success: res => {
+    //     this.setData({
+    //       msgList: msgList.concat(res.data), // 将新数据合并到 msgList 中
+    //     })
+    //   }
+    // });
   },  
   
   // 初始化 WebSocket 连接  
@@ -54,6 +70,10 @@ Page({
     // 监听 WebSocket 接收消息事件  
     this.data.socketTask.onMessage((message) => {  
       console.log('收到服务器内容', message.data);  
+      this.setData({
+        recommendation: message.data
+      }
+      )
       // 在这里处理服务器返回的数据，比如更新页面内容  
     });  
   

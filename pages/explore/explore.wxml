@@ -1,8 +1,50 @@
+<view class="message-container">
+<view class="bubbleBox" wx:for="{{msgList}}">
+    <!-- 右侧的头像昵称 -->
+    <view style="text-align: center;">
+    <view class="avatar">
+      <image src="/pages/explore/ai.svg"></image>
+    </view>
+      <view class="aiName">
+        饮食管家
+      </view>
+    </view>
+    <!-- 左侧的聊天气泡尖角 -->
+    <view class="triangle-top-left">
+    </view>
+    <!-- 聊天气泡 -->
+    <view class="bkbubble-left">
+      <rich-text nodes="{{item.content}}" />
+      <view style="margin-top: 20rpx;" wx:for="{{item.imgList}}" wx:for-item="imgItem">
+        <image src="{{imgItem}}" mode="widthFix" />
+      </view>
+    </view>
+  </view>
 
+  <view class="dislike">
+    <view class="flavour">
+    <image></image>
+    <text></text>
+    </view>
 
-<!--pages/explore/explore.wxml-->
-<text>你有什么问题想问饮食管家吗</text>
+    <view class="flavour">
+    <image></image>
+    <text></text>
+    </view>
+
+    <view class="flavour">
+    <image></image>
+    <text></text>
+    </view>
+
+    <view class="flavour">
+    <image></image>
+    <text></text>
+    </view>
+  </view>
 <div>
-  <input bindinput="bindInputChange" class="input" name="userName" placeholder="请输入问题" auto-focus="true" />
-  <button bindtap="sendMessage" class="submit">发送</button>>
+
+  <button bindtap="sendMessage" class="submit">点我看看有什么</button>>
 </div>
+
+</view>
