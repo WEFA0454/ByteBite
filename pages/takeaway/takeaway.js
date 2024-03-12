@@ -1,14 +1,11 @@
-// pages/sports/sports.js
+// pages/takeaway/takeaway.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    h:"50",
-    w:"100",
-    steps:"15087",
-    calories:"2123.6"
+
   },
 
   /**
@@ -17,6 +14,7 @@ Page({
   onLoad(options) {
 
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -64,17 +62,5 @@ Page({
    */
   onShareAppMessage() {
 
-  },
-  onChange1(e){
-    this.setData({
-      h:e.detail,
-    });
-  },
-  onChange2(e){
-    this.setData({
-      w:e.detail,
-    });
   }
-
 })
-export {}

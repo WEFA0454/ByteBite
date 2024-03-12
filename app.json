@@ -1,7 +1,5 @@
-
 {
   "pages": [
-     
     "pages/sign/sign",
     "pages/login/login",
     "pages/explore/explore",
@@ -10,14 +8,11 @@
     "pages/user/user",
     "pages/search/search",
     "pages/rank/rank",
-
     "pages/flavour/flavour",
     "pages/information/information",
-
-
     "pages/sharedetails/sharedetails",
-    "pages/foodsdetails/foodsdetails"
-
+    "pages/foodsdetails/foodsdetails",
+    "pages/takeaway/takeaway"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -28,31 +23,33 @@
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
   "tabBar": {
-    "color":"#FF8C00",
+    "color": "#FF8C00",
     "selectedColor": "#B22222",
-    "list": [{
-      "pagePath": "pages/explore/explore",
-      "text":"发现",
-      "iconPath": "images/explore.png",
-      "selectedIconPath": "images/selectedexplore.png"
-    },
-    {
-      "pagePath": "pages/community/community",
-      "text":"社区",
-      "iconPath": "images/community.png",
-      "selectedIconPath": "images/selectedcommunity.png"
-    },
-    {
-      "pagePath": "pages/sports/sports",
-      "text":"数据",
-      "iconPath": "images/sport.png",
-      "selectedIconPath": "images/selectedsport.png"
-    },
-    {
-      "pagePath": "pages/user/user",
-      "text":"用户",
-      "iconPath": "images/user.png",
-      "selectedIconPath": "images/selecteduser.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/explore/explore",
+        "text": "发现",
+        "iconPath": "images/explore.png",
+        "selectedIconPath": "images/selectedexplore.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "images/community.png",
+        "selectedIconPath": "images/selectedcommunity.png"
+      },
+      {
+        "pagePath": "pages/sports/sports",
+        "text": "数据",
+        "iconPath": "images/sport.png",
+        "selectedIconPath": "images/selectedsport.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/selecteduser.png"
+      }
+    ]
   }
 }
