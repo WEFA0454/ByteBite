@@ -109,6 +109,11 @@ Page({
     });  
   },  
   
+  takeaway(){
+    wx.navigateTo({
+      url: '/pages/takeaway/takeaway',
+    })
+  },
   // 用户点击发送按钮时触发  
   sendMessage: function() {  
     var defaultQus=`我想让你成为一个饮食助手，帮我推荐合适的饮食，现在是${this.data.currentTime},

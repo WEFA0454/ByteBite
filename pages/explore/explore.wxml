@@ -31,7 +31,7 @@
   </view>
 <div>
   <input bindinput="bindInputChange" class="input" name="userName" placeholder="输入额外的要求" auto-focus="true" />
-  <button class="next">
+  <button bindtap="takeaway" class="next">
   <navigator url="/pages/takeaway/takeaway" open-type="navigate"> 下一步 </navigator>
 </button>
   <button bindtap="sendMessage" class="submit">点我看看有什么</button>
