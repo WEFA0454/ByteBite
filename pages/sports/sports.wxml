@@ -1,27 +1,22 @@
-
-<text>我是数据页</text>
-=======
-=======
->>>>>>> 01469106a1fb5020cbfa9cd1a2f83b564254e4d8
 <view class="sports-container">
   <view class="personal-data" style="margin-left:10px;border: 10rpx solid #693f2bd5;display: flex;margin-right: 10px;margin-top: 15px;height: 180px;justify-content: space-around;align-items: center;background-color: white;border-radius: 25rpx;">
     <view class="slider" style="width: 60%;">
       <view class="height" style="display: flex;background-color: antiquewhite;margin-top:6px;justify-content: space-around;height: 70px;align-items: center;margin-left: 10px;border-radius: 10rpx;">
         <text>身高</text>
         <view>
-          <van-slider min="100" max="250" bind:change="onChange1"/>
+          <van-slider min="100" max="250" bind:change="onChange1" value='{{h}}'/>
           {{h}}cm
         </view>
       </view>
       <view class="weight" style="display: flex;background-color: burlywood;margin-top:20px;justify-content: space-around;height: 70px;align-items: center;margin-left: 10px;border-radius: 10rpx;">
         <text>体重</text>
           <view>
-            <van-slider min="40" max="200" bind:change="onChange2"/>
+            <van-slider min="40" max="200" bind:change="onChange2" value='{{w}}'/>
             {{w}}kg
           </view>
         </view>
       </view>
-    <image src="n1.png" mode="scaleToFill" style="width: 90px;height:180px;flex-shrink: 1;" />
+    <image src='{{src}}' mode="scaleToFill" style="width: 90px;height:180px;flex-shrink: 1;" />
     </view> 
   <view class="sports-data" style="margin-left:10px;border: 10rpx solid #693f2bd5;margin-right: 10px;margin-top: 15px;height: 200px;justify-content: space-around;align-items: center;background-color: white;border-radius: 25rpx;">
     <view class="step" style="display: flex;background-color: antiquewhite;align-items: center;justify-content: space-around;margin-top: 15px;margin-left: 10px;margin-right: 10px;height: 75px;border-radius: 10rpx;">
@@ -37,7 +32,7 @@
       <image src="calorie.png" mode="scaleToFill" style="width: 25px;height: 25px;"/>
       <view class="calorie-info" style="display: flex;flex-direction: column;">
         <text style="font-size: small;">消耗热量</text>
-        {{calories}} kcal
+        {{calories}} cal
         <text style="font-size: smaller;color: gray;">Total Burn</text>
       </view>
       <image src="data1.png" mode="scaleToFill" style="width: 50px;height: 50px;"/>

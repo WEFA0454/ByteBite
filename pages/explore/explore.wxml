@@ -4,5 +4,5 @@
 <text>你有什么问题想问饮食管家吗</text>
 <div>
   <input bindinput="bindInputChange" class="input" name="userName" placeholder="请输入问题" auto-focus="true" />
-  <button bindtap="sendMessage" class="submit">发送</button>>
+  <button bindtap="sendMessage" class="submit">发送</button>
 </div>

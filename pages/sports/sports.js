@@ -1,21 +1,42 @@
-// pages/sports/sports.js
+const db=wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    h:"50",
-    w:"100",
-    steps:"15087",
-    calories:"2123.6"
+    h:50,
+    w:40,
+    steps:0,
+    calories:0,
+    src:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+     this.setData({
+            user:wx.getStorageSync('userInfo'),
+            src:wx.getStorageSync('imgsrc')+'.png'
+          })
+      console.log("src->",this.data.src)
+          var that=this;
+          console.log(this.data.user)
+          db.collection('users').where({
+            phone:that.data.user.phone
+          }).get({
+            success:res =>{
+              console.log("测试",res)
+              that.setData({
 
+                steps:res.data[0].step,
+                w:res.data[0].weight,
+                h:res.data[0].height,
+                calories:res.data[0].step*60*this.data.w*1.306/100000 
+               })
+            }
+          })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -69,11 +90,27 @@ Page({
     this.setData({
       h:e.detail,
     });
+    db.collection('users').where({}).update({
+            data:{
+              height:e.detail
+            }
+          }).then(res=>{
+            console.log(res)
+          })
+      this.onLoad();
   },
   onChange2(e){
     this.setData({
       w:e.detail,
     });
+    db.collection('users').where({}).update({
+            data:{
+              weight:e.detail
+            }
+          }).then(res=>{
+            console.log(res)
+          })
+      this.onLoad();
   }
 
 })

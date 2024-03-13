@@ -8,7 +8,16 @@ Component({
     indicatorDots:{
       type:Boolean,
       value:true
-    }
+    },
+    src1:{
+      type:String
+    },
+    src2:{
+      type:String
+    },
+    src3:{
+      type:String
+    },
   },
 
   /**

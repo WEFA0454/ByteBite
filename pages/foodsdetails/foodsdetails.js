@@ -5,13 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    src1:"",
+    src2:"",
+    src3:"",
+    details:"",
+    title:"",
+    likenum:"0"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.setData({
+      src1:wx.getStorageSync('src1'),
+      src2:wx.getStorageSync('src2'),
+      src3:wx.getStorageSync('src3'),
+      details:wx.getStorageSync('detail'),
+      title:wx.getStorageSync('title'),
+      likenum:wx.getStorageSync('likenum')
+    })
 
   },
 
@@ -61,6 +74,12 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-
+    
+  },
+  Onlikeclick(){
+    this.setData({
+      likenum:this.data.likenum+1
+    })
+    
   }
 })

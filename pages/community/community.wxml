@@ -1,34 +1,97 @@
-
 <!--pages/community/community.wxml-->
 <view class="community-container">
 <view style="display: flex;justify-content:space-evenly;margin-top:6px;">
-  <van-button 
-  type="default"
-  hairline
-  >⁣⁣⁣⁣⁣⁣⁣⁣　　⁣⁣⁣⁣⁣⁣⁣附近推荐⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣</van-button>
   <van-button
   type="default"
+  bind:click="Onrankclick"
   hairline
-  >⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣排行榜⁣⁣⁣⁣　⁣⁣⁣⁣　　⁣⁣⁣⁣⁣</van-button>
+  >⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　　⁣⁣⁣⁣　　⁣⁣⁣⁣　　⁣⁣⁣⁣排行榜⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　　　⁣⁣⁣⁣⁣</van-button>
 </view>
 <view class="header">
  
   <van-search
   value="{{ value }}"
   shape="round"
-
-  background="#FF8C00"
-  placeholder="请输入搜索关键词"
   background="	#FFA500"
   bind:tap="Clicksearch"
   disabled bind:focus="Clicksearch"
   placeholder="附近推荐"
 />
 </view>
-<foods-list></foods-list>
-<foods-list></foods-list>
-<foods-list></foods-list>
-<foods-list></foods-list>
-<foods-list></foods-list>
+<foods-list 
+src1="https://5b0988e595225.cdn.sohucs.com/images/20190720/3009f4f109f5474d905e2c5ba45a1c9e.jpeg "
+src2="https://clubimg.club.vmall.com/pic/2017/05/29/5e5224bfa6a5e5ed293d641abb26b1cc_IMG_20170428_150929.jpg?mode=download"
+title1="醇厚美味增情感，快乐就要这样分享"
+title2="家门口的火热夜市 尽享人间烟火气"
+likenum1="43"
+likenum2="128"
+src3="http://5b0988e595225.cdn.sohucs.com/images/20190720/f3b8e94c7cca4a618b9a477910c11647.jpeg"
+src4="http://5b0988e595225.cdn.sohucs.com/images/20190720/9fc048a1b6e6482dae8c8c65383f4895.jpeg"
+src5="https://clubimg.club.vmall.com/pic/2017/05/29/f775b7a92336a2a47339d5af4ec37c2b_IMG_20170428_150622.jpg?mode=download"
+src6="https://tse2-mm.cn.bing.net/th/id/OIP-C.1D63VhfZjGEIuzcoG1qr0QEgDY?pid=ImgDet&w=474&h=355&rs=1"
+detail1="这家菜品实在惊艳眼球，进口厚切牛肉身上较为柔嫩的肋眼部位，高温烧烤守住水份，守住滋味，有嫩度更有韧度。爆浆芝士蛋糕这款甜点深得我们全家的喜欢，醇正奶香的芝士蛋糕松绵顺滑，酸甜梅果浆与芝士奶盖也很好吃！"
+detail2="夏日夜幕的降临并不意味着一天的结束,恰是另一种生活的开始。烹炒的火苗、蒸腾的热气、食物的香气让人流连忘返。周边大大小小的夜市指南来了，快带上空空的胃去感受浓浓烟火气吧~"
+></foods-list>
+
+<foods-list
+src1="https://ts1.cn.mm.bing.net/th/id/R-C.07a382ab5187904ca98f94634e2d0c34?rik=6BlnEGS7MF6KmQ&riu=http%3a%2f%2fimg95.699pic.com%2fphoto%2f50075%2f0767.jpg_wh300.jpg&ehk=71ixvzg63aGZuW6AFWjrw0j%2fK%2bigbkImJUwwmV3sPYE%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+src6="https://pic4.zhimg.com/v2-d48539860b92e8bbb090d64b9fcaee6f_b.jpg"
+title1="地道小吃集合！这家辣椒又辣又香"
+title2="北京！直接遥遥领先！！"
+likenum1="53"
+likenum2="167"
+src3="https://ts1.cn.mm.bing.net/th/id/R-C.05a3c75196f929e7a9084367ef0ab7dd?rik=DHS%2bd4hnryQlwA&riu=http%3a%2f%2fupload.art.ifeng.com%2f2020%2f0614%2f1592128994130.jpg&ehk=NQHqJc%2fqniu4vLPwEa4Xjnc3%2b7NCZ1pRD1y74h%2bS0u0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+src4="https://tr-osdcp.qunarzz.com/tr-osd-tr-space/img/797b55fd56675e45cbd86e1c1e73f3b0.jpg_r_1360x1360x95_5c3a710c.jpg"
+src5="https://tr-osdcp.qunarzz.com/tr-osd-tr-space/img/c0a12aaf3fe6ed292ad3dda2836eef8a.jpg_r_1360x1360x95_94d9aa3b.jpg"
+src2="https://c-ssl.dtstatic.com/uploads/blog/202206/28/20220628164255_a6ff9.thumb.1000_0.jpeg"
+detail1="香喷喷的串串，新鲜的牛肉，香醇的白茶....在北京，我要像一个普通上班族一样发出发自灵魂的感叹——我这一天就是为了这一顿而存在的！"
+detail2="Alpha cafe--谁能想到，北京最好吃的杏仁豆腐竟然藏在胡同的咖啡馆里。端着青花小碗坐在喝咖啡的肤色各异的外国人中，杏仁微苦的乳香顽强的钻过各色香水，这碗杏仁豆腐就成了北京胡同魔幻的朋克气息化身"
+></foods-list>
+
+<foods-list
+src4="https://c-ssl.duitang.com/uploads/blog/202403/11/m7SBxyDySNxmBbn.jpeg"
+src2="https://pic1.zhimg.com/v2-9970d5d5c014c7e43c7e841ee020ebd2_r.jpg"
+title1="北京新开热闹餐厅，尝尝闽味人情！"
+title2="吃了197家店，最靠谱的本地美食合集来了"
+likenum1="66"
+likenum2="74"
+detail1="八闽食府，原福建驻京办，今天，本假广东人终于要向福建人福建菜下手了。福州不只有“荔枝肉”、“佛跳墙”这样的硬菜，各种早点小吃也是名声在外。在北京假装胡建人，只需要早上来一碗面片糊，下午茶再来个八宝芋泥。"
+detail2="乡味小厨——>在大馆子里小吃小喝，胜过在小馆子里大吃大喝。乡味小厨，瑰丽酒店的三层，酒店里的餐厅，价格与排场齐飞。虽然价格小贵，不过对于富婆（公）来说当然不成问题，如果你恰好住在瑰丽酒店，可以去吃碗面。"
+src3="https://c-ssl.dtstatic.com/uploads/blog/202403/11/5zSG5yZyHOpavwZ.thumb.1000_0.jpeg"
+src1="https://pic4.zhimg.com/v2-205fc161c7e0488197806ddf9123a16f_1440w.jpg?source=172ae18b"
+src5="https://c-ssl.dtstatic.com/uploads/blog/202403/11/y9SXnDVDcb3QxNd.thumb.1000_0.jpeg"
+src6="https://pic4.zhimg.com/v2-bfe7b2d1b1012b63b2a30391e7b38347_b.jpg"
+></foods-list>
+
+<foods-list
+src1="https://img.zcool.cn/community/013b5e5f98ce8411013fdcc71d2205.jpg@1280w_1l_2o_100sh.jpg"
+src2="https://img.zcool.cn/community/01ae0a5bded3cea801209252b9fe08.jpg@3000w_1l_2o_100sh.jpg"
+title1="减脂期也能吃的牛肉火锅它来了"
+title2="营养又健康 纯纯皇后体验卡"
+likenum1="39"
+likenum2="158"
+src3="https://img.zcool.cn/community/01b9885bded3b9a801209252f04834.jpg?x-oss-process=image/format,webp"
+src4="https://img.zcool.cn/community/0136015bded3c1a80121ab5d9e1008.jpg?x-oss-process=image/format,webp"
+src5="https://img.zcool.cn/community/010e195bded3bfa80121ab5dcdeeb2.jpg?x-oss-process=image/format,webp"
+src6="https://img.zcool.cn/community/01c65f5bded3cfa8012092523b7b55.jpg?x-oss-process=image/format,webp"
+detail1="如果说这几年什么火锅最出风头，我想只有潮汕牛肉火锅了。跟火红麻辣的四川火锅相比，潮汕牛肉火锅实在是“素颜”到家。十足的清汤挂面，一锅子清汤，清一色牛肉，再简单不过。但吃起来，却让人记忆难忘，欲罢不能。"
+detail2="院落小菜——餐厅位置很好找，出地铁走一会就到了，终于打卡四合院里的北京菜，和朋友来这里聚会，点了黄油芝士焗红薯、福气烤鸭半只、院落味道三宫格、芦笋炒白玉菇、老火煲梨汤、杏仁兔子，环境古色古香，室内设计别有一番老北京风味，服务贴心周到，还送了黑糖豆花和鸭汤"
+></foods-list>
+
+<foods-list
+src1="http://5b0988e595225.cdn.sohucs.com/images/20191201/a3071920a74043a5a63985e956317ed6.jpeg"
+src2="http://5b0988e595225.cdn.sohucs.com/images/20191201/1277146494d74a0d9f7a5f5cf0fb2b7b.jpeg"
+title1="必打卡7道经典美食，看看你吃过几个？ "
+title2="味道美极了，关键还不腻"
+likenum1="29"
+likenum2="76"
+src3="https://c-ssl.dtstatic.com/uploads/blog/202207/25/20220725130644_e6807.thumb.1000_0.jpg"
+src4="http://5b0988e595225.cdn.sohucs.com/images/20191201/a584acfd169347d184386451736d94c2.jpeg"
+src5="http://5b0988e595225.cdn.sohucs.com/images/20191201/031ea949f16940a6aaebc420c6ada3a2.jpeg"
+src6="http://5b0988e595225.cdn.sohucs.com/images/20191201/78c2106a2711422ca673e0f97d315e5b.jpeg"
+detail1="提起油酥饼，相信大家都有所耳闻，油酥饼发源于惠山，早在明末清初年间在惠山就已经开始制作。油酥饼是众多小吃中我最爱吃的一道，吃的时候要小心翼翼，一不小心上面的芝麻、油酥就纷纷往下落，所以吃油酥饼的吃相也是比较狼狈的。"
+detail2="小笼包是北京的传统名小吃，又称为“小笼馒头”，距今已有百余年历史，现在在早餐店很多地方都可以吃到，当然最正宗的还要属五道口小笼包。小笼包的皮薄厚恰到好处，用筷子夹起来不会破，随后咬出一个小口来，一吮满口卤，味道美极了，关键还不腻。"
+></foods-list>
+
 <van-button type="default" round="true" size="normal" color="#FFA500"  bind:click="OnDetailClick" style="position: fixed;bottom: 10px;right: 10px;">+</van-button>
 </view>

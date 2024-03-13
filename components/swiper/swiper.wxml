@@ -4,13 +4,13 @@
     indicator-color="#fff"
     indicator-active-color="#FFA500">
     <swiper-item>
-      <image src="https://ts1.cn.mm.bing.net/th/id/R-C.8a47238da1fbdefa55bddd69b33aafc4?rik=CC0%2fpEIUE0Qw5g&riu=http%3a%2f%2fwww.songshuhuwai.cn%2fuploads%2fallimg%2f181220%2f1-1Q22010063M22.jpg&ehk=hdfPAu6b21Or1V95YR3m5uVDynHRXnUITVuRQ%2bsQ2%2fU%3d&risl=&pid=ImgRaw&r=0" mode="aspectFill"/>
+      <image src='{{src1}}' mode="aspectFill"/>
     </swiper-item>
     <swiper-item>
-        <image src="https://img.tukuppt.com/ad_preview/00/19/57/5c9a01afe7cd3.jpg!/fw/980" mode="aspectFill"/>
+        <image src='{{src2}}' mode="aspectFill"/>
     </swiper-item>
     <swiper-item>
-        <image src="https://img.zcool.cn/community/0105ec5b5ac3cba801206a35cf08a8.jpg@1280w_1l_2o_100sh.jpg" mode="aspectFill"></image>
+        <image src='{{src3}}' mode="aspectFill"></image>
     </swiper-item>
   </swiper>
 </view>
