@@ -1,14 +1,14 @@
 <!--pages/cookbook/cookbook.wxml-->
 <view class="cookbook">
-  <view class="header" style=" display: flex;margin-left: 20px;margin-top: 20px;">
-    <text style="font-size: 40px;font-weight: bolder;text-align: right;margin-right:20px;margin-top: 40px;">麻辣烫</text>
-    <image src="/pages/cookbook/mlt.jpg" style="float:right;width: 200px;height: 180px;"></image>
+  <view class="header" style=" display: flex;margin-left: 10px;margin-top: 20px;">
+    <text style="font-size: 30px;font-weight: bolder;text-align: right;margin-right:10px;margin-top: 40px;">麻辣烫</text>
+    <image src="/pages/cookbook/mlt.jpg" style="float:right;width: 200px;height: 150px;"></image>
   </view>
   <view class="shicai">
   <text style="font-size: 30px;font-weight: bold;">食材:\n</text>
-  <text style="font-size: 20px;">方便面一块   蔬菜青笋100g  香菇3朵   
-                                                    肉类午餐肉100g   火腿肠100g  
-                                                    鱼丸类鱼丸100g   鱼豆腐100g   麻酱100g  
+  <text style="font-size: 18px;">方便面一块\n   蔬菜青笋100g\n  香菇3朵   
+                                                    肉类午餐肉100g\n   火腿肠100g  
+                                                    鱼丸类鱼丸100g\n   鱼豆腐100g\n   麻酱100g  
                                                      生抽15g   醋20g  糖20g  盐10g  芝麻油15g   
                                                      豆瓣辣酱35g  火锅底料50g  葱段50g  
                                                      姜片3-4片  蒜末50g   香菜末（可省略）10g

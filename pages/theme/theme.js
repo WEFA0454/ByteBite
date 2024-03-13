@@ -1,18 +1,18 @@
-// pages/community/community.js
+import Toast from '@vant/weapp/toast/toast';
+const db=wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    value:""
+    radio: true,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
   },
 
   /**
@@ -54,27 +54,27 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-    //拿到数据之后要具体修改
+
   },
-  Clicksearch(){
-    wx.navigateTo({
-      url: '/pages/search/search',
-    })
-  },
-  Onrankclick(){
-    wx.navigateTo({
-      url: '/pages/rank/rank',
-    })
-  },
-  OnDetailClick(){
-    wx.navigateTo({
-      url: '/pages/sharedetails/sharedetails',
-    })
-  },
+
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage() {
 
-  }
+  },
+  onChange(event) {
+    this.setData({
+      radio: event.detail,
+    });
+    console.log(this.data.radio);
+    db.collection('users').where({}).update({
+            data:{
+              theme:event.detail
+            }
+          }).then(res=>{
+              Toast.success('更改成功');
+          })
+      wx.setStorageSync('imgsrc',this.data.radio)
+  },
 })

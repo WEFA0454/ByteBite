@@ -10,6 +10,8 @@
     "pages/rank/rank",
     "pages/flavour/flavour",
     "pages/information/information",
+    "pages/theme/theme",
+
     "pages/sharedetails/sharedetails",
     "pages/foodsdetails/foodsdetails",
     "pages/takeaway/takeaway",

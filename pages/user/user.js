@@ -29,7 +29,11 @@ Page({
       url: '/pages/flavour/flavour',
     })
   },
-
+  toTheme(){
+    wx.navigateTo({
+      url: '/pages/theme/theme',
+    })
+  },
   toInfo(){
     wx.navigateTo({
       url: '/pages/information/information',

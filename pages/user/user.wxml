@@ -18,7 +18,7 @@
 <view class="divLine"></view>
   <!--各种工具框-->
   <view class="theme">
-    <view class="fontCenter">主题</view>
+    <view bind:tap="toTheme" class="fontCenter">主题</view>
     <view class="changeToNextpage" ></view>
   </view>
   <view bindtap="toFlavour" class="theme">口味个性化

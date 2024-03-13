@@ -1,1 +1,17 @@
 /* pages/cookbook/cookbook.wxss */
+.shicai{
+  position:relative;
+  margin:5px 8px 8px 8px;
+  border: 4px solid rgb(88, 74, 74); 
+  border-radius: 10px;
+  background-color: rgb(247, 233, 216);
+}
+
+.shicai text{
+  position: relative;
+  margin: 5px 10px 10px 10px ;
+}
+
+.header{
+  margin: 5px 10px 10px 10px ;
+}

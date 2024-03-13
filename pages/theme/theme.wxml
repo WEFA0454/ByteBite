@@ -1,0 +1,32 @@
+<view class="theme-container">
+<view class="text" style="margin-top: 20px;margin-left: 105px;font-size: large;margin-bottom: 30px;">
+<text>个人形象定制</text>
+</view>
+<view class="select" style="margin-left: 20px;">
+  <van-radio-group
+  value="{{ radio }}"
+  bind:change="onChange"
+  direction="horizontal"
+>
+  <van-radio name="1">
+  <image src="b1.png" mode="scaleToFill" style="height: 100px;width: 50px;"/></van-radio>
+  <van-radio name="2">
+  <image src="b2.png" mode="scaleToFill" style="height: 100px;width: 50px;"/></van-radio>
+  <van-radio name="3">
+  <image src="b3.png" mode="scaleToFill" style="height: 100px;width: 50px;"/></van-radio>
+  <van-radio name="4">
+  <image src="b4.png" mode="scaleToFill" style="height: 100px;width: 50px;"/></van-radio>
+  <van-radio name="5">
+  <image src="g1.png" mode="scaleToFill" style="height: 100px;width: 50px;"/></van-radio>
+  <van-radio name="6">
+  <image src="g2.png" mode="scaleToFill" style="height: 100px;width: 50px;"/></van-radio>
+  <van-radio name="7">
+  <image src="g3.png" mode="scaleToFill" style="height: 100px;width: 50px;"/></van-radio>
+  <van-radio name="8">
+  <image src="g4.png" mode="scaleToFill" style="height: 100px;width: 50px;"/></van-radio>
+  <van-radio name="9">
+  <image src="n1.png" mode="scaleToFill" style="height: 100px;width: 50px;"/></van-radio>
+</van-radio-group>
+</view>
+<van-toast id="van-toast" />
+</view>

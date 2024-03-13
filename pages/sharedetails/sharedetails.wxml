@@ -5,8 +5,8 @@
 <van-cell-group>
   <van-field
     placeholder="请输入标题...（18字以内）"
-    bind:change="onChange"
-    bind:confirm="onSearch"
+    bind:change="onChange1"
+    bind:confirm="onSearch1"
     auto-focus="true"
     autosize
     maxlength="50"
@@ -18,25 +18,30 @@
 <van-cell-group>
   <van-field
     placeholder="请输入文字内容...（120字以内），您上传的内容在审核过后将上传平台，请耐心等待"
-    bind:change="onChange"
-    bind:confirm="onSearch"
+    bind:change="onChange2"
+    bind:confirm="onSearch2"
     auto-focus="true"
     type="textarea"
     autosize
-    maxlength="50"
+    maxlength="120"
     input-class="textarea" 
   />
 </van-cell-group>
 </view>
 <view class="pictureupload" style="margin-top: 20px;margin-left: 10px;">
-<van-uploader file-list="{{ fileList }}" />
+<van-uploader file-list="{{ fileList }}" 
+bind:after-read="afterRead" 
+bind:delete="imgdel"
+deletable="true"
+max-count="3"/>
 </view>
 <view class="upbn" style="margin-left: 30px;margin-top: 20px;">
 <van-button
   type="default"
-  bind:click="Onrankclick"
+  bind:click="Onupclick"
   hairline
   color="#FFA500"
   >⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　　⁣⁣　　⁣⁣⁣⁣上传⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣　⁣⁣⁣⁣⁣⁣⁣⁣　⁣⁣⁣⁣⁣</van-button>
 </view>
+<van-toast id="van-toast" />
 </view>
